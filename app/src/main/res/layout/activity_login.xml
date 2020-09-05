@@ -36,6 +36,7 @@
 
     <EditText
         android:id="@+id/edit_signin_email"
+        android:inputType="textEmailAddress"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_below="@id/text_signin_email"
@@ -43,7 +44,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginRight="40dp"
         android:background="@drawable/round_edittext"
-        android:hint="이메일 아이디 입력" />
+        android:hint="Email" />
 
     <TextView
         android:id="@+id/text_siginin_password"
@@ -60,13 +61,14 @@
 
     <EditText
         android:id="@+id/edit_siginin_password"
+        android:inputType="textPassword"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_below="@id/text_siginin_password"
         android:layout_marginLeft="41dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/round_edittext"
-        android:hint="비밀번호"
+        android:hint="Password"
         android:password="true" />
 
     <Button

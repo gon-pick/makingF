@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "825436205997",
+    "firebase_url": "https://makingf-583fb.firebaseio.com",
+    "project_id": "makingf-583fb",
+    "storage_bucket": "makingf-583fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825436205997:android:007a6ec91b01400fbae724",
+        "android_client_info": {
+          "package_name": "com.example.making_f"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825436205997-uv1li72mh6f790o5c5t5aj1dstj2aq30.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.making_f",
+            "certificate_hash": "d18812221b4e96c4e03a8c8d1b0fa280dad11022"
+          }
+        },
+        {
+          "client_id": "825436205997-6t4ch7nlfeb4isb57ebkea2llijtb6da.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6nWjCNvKE7WPwHgCiNH4zAoRK8DXo_k8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825436205997-6t4ch7nlfeb4isb57ebkea2llijtb6da.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
