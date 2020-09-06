@@ -27,6 +27,7 @@ class SignUpActivity : AppCompatActivity() {
                 Toast.makeText(this,"비밀번호는 6글자 이상 이고 비밀번호 확인과 동일해야 합니다.",Toast.LENGTH_SHORT).show()
             }else{
                 Signup()
+                finish()
             }
         }
 

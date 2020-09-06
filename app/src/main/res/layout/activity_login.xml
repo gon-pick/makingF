@@ -92,15 +92,16 @@
         android:layout_below="@id/btn_login"
         android:layout_marginTop="30dp">
 
-        <TextView
-            android:id="@+id/text_account"
-            android:layout_height="wrap_content"
+        <Button
+            android:id="@+id/btn_find_password"
             android:layout_width="wrap_content"
-            android:text="계정이 없으신가요?"
-            android:textColor="#000000"
-            android:textSize="12sp"
-            android:lineSpacingExtra="18sp"
+            android:layout_height="17dp"
+            android:text="비밀번호 찾기"
             android:layout_marginLeft="98dp"
+            android:textSize="12sp"
+            android:textColor="#a2a8ee"
+            android:lineSpacingExtra="18sp"
+            android:background="#FFFFFF"
             />
 
         <Button
@@ -111,9 +112,8 @@
             android:textSize="12sp"
             android:textColor="#a2a8ee"
             android:lineSpacingExtra="18sp"
-            android:padding="0dp"
             android:layout_marginLeft="12dp"
-            android:layout_toRightOf="@id/text_account"
+            android:layout_toRightOf="@id/btn_find_password"
             android:background="#FFFFFF"
             />
 

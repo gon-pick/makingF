@@ -121,7 +121,7 @@
         android:layout_below="@id/edit_signup_password_confirm"
         android:layout_marginTop="43dp"
         android:layout_marginLeft="23dp"
-        android:background="@drawable/btn_signup"
+        android:background="@drawable/btn_signup_complete"
         />
     
     <Button

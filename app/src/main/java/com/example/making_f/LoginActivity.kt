@@ -17,12 +17,17 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         auth = FirebaseAuth.getInstance() // 회원 가입 코드
-        btn_login.setOnClickListener {
+        btn_login.setOnClickListener {//로그인 버튼 클릭
             signinEmail()
         }
 
-        btn_signin_signup.setOnClickListener{
+        btn_signin_signup.setOnClickListener{//회원 가입 버튼
             startActivity(Intent(this,SignUpActivity::class.java))
+            finish()
+        }
+
+        btn_find_password.setOnClickListener {
+            startActivity(Intent(this,FindPassword::class.java))
             finish()
         }
     }
@@ -34,9 +39,10 @@ class LoginActivity : AppCompatActivity() {
                 if(task.isSuccessful){
                     //아이디와 패스워드가 맞았을 경우 나타나는 부분
                     moveMainPage(task.result?.user) //id 생성이 성공적으로 만들어졌을경우
+                    finish()
                 }else{
                     //틀렸거나 없을경우!
-                    Toast.makeText(this,task.exception?.message,Toast.LENGTH_LONG).show()
+                    Toast.makeText(this,"아이디와 비밀번호를 확인하세요.",Toast.LENGTH_LONG).show()
                     Log.e("LoginFail","Login Fail")
                 }
             }
