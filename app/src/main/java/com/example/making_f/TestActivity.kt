@@ -6,13 +6,22 @@ import android.widget.SeekBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_test.*
+import kotlinx.android.synthetic.main.activity_test.btn_popup_result
+import kotlinx.android.synthetic.main.activity_test.seek1
+import kotlinx.android.synthetic.main.activity_test.seek2
+import kotlinx.android.synthetic.main.activity_test.seek3
+import kotlinx.android.synthetic.main.activity_test.seek4
+import kotlinx.android.synthetic.main.activity_test.seek5
+import kotlinx.android.synthetic.main.activity_test.seek6
+import kotlinx.android.synthetic.main.activity_test.seek7
+import kotlinx.android.synthetic.main.sub_popup.*
 
 class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test)
 
-        var sek1 = 1
+        var sek1: Int
         var sek2 = 0
         var sek3 = 0
         var sek4 = 0
@@ -20,24 +29,15 @@ class TestActivity : AppCompatActivity() {
         var sek6 = 0
         var sek7 = 0
 
-        seek1.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-            override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                TODO("Not yet implemented")
-                sek1 = progress
-            }
-
-            override fun onStartTrackingTouch(seekBar: SeekBar?) {
-                TODO("Not yet implemented")
-            }
-
-            override fun onStopTrackingTouch(seekBar: SeekBar?) {
-                TODO("Not yet implemented")
-            }
-
-        })
-
         btn_popup_result.setOnClickListener { view ->
-            Toast.makeText(this, "${sek1}", Toast.LENGTH_SHORT).show()
+            sek1 = seek1.progress
+            sek2 = seek2.progress
+            sek3 = seek3.progress
+            sek4 = seek4.progress
+            sek5 = seek5.progress
+            sek6 = seek6.progress
+            sek7 = seek7.progress
+            Toast.makeText(this, "${sek1}, ${sek2}, ${sek3}, ${sek4}, ${sek5}, ${sek6}, ${sek7}", Toast.LENGTH_SHORT).show()
         }
     }
 }
