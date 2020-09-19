@@ -9,7 +9,14 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="106b1c14-1404-4b32-88a1-dcd4b611ed8e" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="87bf4b5b-cf5d-4295-b174-464fe6b7814f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/making_f/navigation/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/making_f/navigation/HomeFragment.kt" afterDir="false" />
+    </list>
+>>>>>>> 099e661d5685f75f65edd6e07c9214d008d45e2e
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
