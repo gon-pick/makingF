@@ -12,7 +12,6 @@ import android.widget.SeekBar
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.making_f.R
-import com.example.making_f.TestActivity
 import kotlinx.android.synthetic.main.fragment_search.view.*
 import kotlinx.android.synthetic.main.sub_popup.*
 import kotlinx.android.synthetic.main.sub_popup.view.*

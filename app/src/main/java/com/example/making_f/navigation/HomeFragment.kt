@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import com.example.making_f.R
 import kotlinx.android.synthetic.main.fragment_home.view.*
 
-class gitHomeFragment : Fragment() {
+class HomeFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
