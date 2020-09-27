@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -16,15 +17,6 @@
         android:textSize="14sp"
         android:textStyle="bold"
         android:textColor="#000000"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/txt_profile_edit"
-        app:layout_constraintBottom_toBottomOf="@id/txt_profile_edit"
-        android:layout_marginLeft="17dp"
-        android:src="@drawable/btn_back"/>
 
     <View
         android:id="@+id/pview"
@@ -80,38 +72,14 @@
         android:textSize="14sp"
         android:textStyle="bold"/>
 
-    <TextView
-        android:id="@+id/txt_profile_edit_my_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pview2"
-        android:text="이름"
-        android:layout_marginLeft="23dp"
-        android:layout_marginTop="13dp"
-        android:textColor="#000000"
-        android:textSize="12sp"/>
-
-    <TextView
-        android:id="@+id/txt_profile_edit_my_name_ex"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pview2"
-        android:text="가나다"
-        android:layout_marginRight="23dp"
-        android:layout_marginTop="13dp"
-        android:textColor="#707070"
-        android:textSize="12sp"/>
-
     <View
         android:id="@+id/pview3"
-        app:layout_constraintTop_toBottomOf="@id/txt_profile_edit_my_name"
-        app:layout_constraintStart_toStartOf="@id/pview2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="20dp"
-        android:background="#e3e3e3"/>
+        android:layout_marginTop="30dp"
+        android:background="#e3e3e3"
+        app:layout_constraintStart_toStartOf="@id/pview2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_profile_edit_my_information" />
 
     <TextView
         android:id="@+id/txt_profile_edit_my_nickname"
@@ -125,13 +93,13 @@
         android:textColor="#000000"
         android:textSize="12sp"/>
 
-    <TextView
+    <EditText
         android:id="@+id/txt_profile_edit_my_nickname_ex"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pview3"
-        android:text="닉네임이 설정되어있지 않습니다."
+        android:text="닉네임 변경을 원하시면 입력하세요."
         android:layout_marginRight="23dp"
         android:layout_marginTop="13dp"
         android:textColor="#707070"
@@ -172,100 +140,52 @@
         android:textSize="12sp"/>
 
     <View
-        android:id="@+id/pview5"
-        app:layout_constraintTop_toBottomOf="@id/txt_profile_edit_my_email"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="20dp"
-        android:background="#e3e3e3"/>
-
-    <TextView
-        android:id="@+id/txt_profile_edit_my_uni"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pview5"
-        android:text="소속 학교"
-        android:layout_marginLeft="23dp"
-        android:layout_marginTop="13dp"
-        android:textColor="#000000"
-        android:textSize="12sp"/>
-
-    <TextView
-        android:id="@+id/txt_profile_edit_my_uni_ex"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pview5"
-        android:text="서울과학기술대학교"
-        android:layout_marginRight="23dp"
-        android:layout_marginTop="13dp"
-        android:textColor="#707070"
-        android:textSize="12sp"/>
-
-    <View
         android:id="@+id/pview6"
-        app:layout_constraintTop_toBottomOf="@id/txt_profile_edit_my_uni"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="20dp"
-        android:background="#e3e3e3"/>
-
-    <TextView
-        android:id="@+id/txt_profile_edit_my_major"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:background="#e3e3e3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pview6"
-        android:text="전공"
-        android:layout_marginLeft="23dp"
-        android:layout_marginTop="13dp"
-        android:textColor="#000000"
-        android:textSize="12sp"/>
+        app:layout_constraintTop_toBottomOf="@+id/txt_profile_edit_my_email" />
 
-    <TextView
-        android:id="@+id/txt_profile_edit_my_major_ex"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pview6"
-        android:text="컴퓨터공학과"
-        android:layout_marginRight="23dp"
-        android:layout_marginTop="13dp"
-        android:textColor="#707070"
-        android:textSize="12sp"/>
 
-    <View
-        android:id="@+id/pview7"
-        app:layout_constraintTop_toBottomOf="@id/txt_profile_edit_my_major"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="20dp"
-        android:background="#e3e3e3"/>
 
     <TextView
         android:id="@+id/txt_profile_edit_pwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pview7"
+        app:layout_constraintTop_toBottomOf="@id/pview6"
         android:text="비밀번호 재설정"
         android:layout_marginLeft="23dp"
         android:layout_marginTop="13dp"
         android:textColor="#000000"
-        android:textSize="12sp"/>
+        android:textSize="12sp"
+        android:clickable="true"/>
 
     <View
-        app:layout_constraintTop_toBottomOf="@id/txt_profile_edit_pwd"
-        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/view10"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="20dp"
-        android:background="#e3e3e3"/>
+        android:background="#e3e3e3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_profile_edit_pwd" />
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="181dp"
+        android:layout_marginLeft="181dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="194dp"
+        android:layout_marginRight="194dp"
+        android:rotation="180"
+        android:src="@drawable/btn_back"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view10" />
 
 
 

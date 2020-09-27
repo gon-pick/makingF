@@ -1,9 +1,10 @@
-package com.example.making_f
+package com.example.making_f.Activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.making_f.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_findpassword.*
 
@@ -17,7 +18,7 @@ class FindPassword : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         btn_cert_back.setOnClickListener {
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
 

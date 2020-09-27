@@ -66,7 +66,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="360dp"
-        android:layout_height="186dp"
+        android:layout_height="300dp"
         android:background="@drawable/ic_base"
         android:layout_marginTop="15dp"
         android:layout_gravity="center_horizontal"
@@ -93,7 +93,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="9sp"
+            android:textSize="12sp"
             android:textColor="#000000"
             android:lineSpacingExtra="8sp"
             android:text="컴퓨터공학은 공업을 위주로 하던 산업사회에서 정보화 사회로

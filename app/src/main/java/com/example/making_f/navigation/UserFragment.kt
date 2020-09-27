@@ -7,8 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.making_f.Activity.LoginActivity
+import com.example.making_f.Activity.ProfileEditActivity
 import com.example.making_f.R
-import kotlinx.android.synthetic.main.fragment_user.*
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_user.view.*
 
 class UserFragment : Fragment() {
@@ -21,7 +23,15 @@ class UserFragment : Fragment() {
 
         view.mypage_imgbutton.setOnClickListener { view ->
             Log.d("mypage_imgbutton", "Selected")
-            startActivity(Intent(getActivity()!!, ProfileEditActivity::class.java))
+            var intent = Intent(getActivity(), ProfileEditActivity::class.java)
+            startActivity(intent)
+        }
+
+        view.txt_mypage_logout.setOnClickListener { view ->
+            FirebaseAuth.getInstance().signOut()
+            getActivity()?.finish()
+            var intent = Intent(getActivity(), LoginActivity::class.java)
+            startActivity(intent)
         }
 
         return view

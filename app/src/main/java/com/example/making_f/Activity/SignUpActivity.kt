@@ -1,13 +1,15 @@
-package com.example.making_f
+package com.example.making_f.Activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.making_f.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_signup.*
 
 class SignUpActivity : AppCompatActivity() {
@@ -33,7 +35,7 @@ class SignUpActivity : AppCompatActivity() {
         }
 
         btn_find_account.setOnClickListener {
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
 
@@ -45,6 +47,12 @@ class SignUpActivity : AppCompatActivity() {
                     task ->
                 if(task.isSuccessful){
                     //회원가입
+                    // Write a message to the database
+                    val database = Firebase.database
+                    val myRef = database.getReference("message")
+
+                    myRef.setValue("Hello, World!")
+
                     moveMainPage(task.result?.user) //id 생성이 성공적으로 만들어졌을경우 MainPage로 이동
                     finish()
                 }
@@ -59,7 +67,7 @@ class SignUpActivity : AppCompatActivity() {
 
     fun moveMainPage(user: FirebaseUser?) {//로그인 성공 시 다음페이지로 가는 부분.
         if(user != null) {
-            startActivity(Intent(this,MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 }

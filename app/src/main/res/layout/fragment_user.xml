@@ -94,14 +94,14 @@
         android:id="@+id/txt_mypage_interesting_subject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view2"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="20dp"
         android:text="관심있는 과목"
-        android:layout_marginLeft="24dp"
         android:textColor="#000000"
         android:textSize="12sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view2" />
 
     <ImageView
         android:id="@+id/sub1"
@@ -111,7 +111,8 @@
         app:layout_constraintTop_toBottomOf="@id/txt_mypage_interesting_subject"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="24dp"
-        android:src="@drawable/subject"/>
+        android:src="@drawable/subject"
+        />
     <ImageView
         android:id="@+id/sub2"
         android:layout_width="60dp"
@@ -121,14 +122,16 @@
         android:layout_marginTop="15dp"
         android:layout_marginLeft="10dp"
         android:src="@drawable/subject"/>
+
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="60dp"
         android:layout_height="26dp"
-        app:layout_constraintLeft_toRightOf="@id/sub2"
-        app:layout_constraintTop_toBottomOf="@id/txt_mypage_interesting_subject"
-        android:layout_marginTop="15dp"
         android:layout_marginLeft="10dp"
-        android:src="@drawable/subject"/>
+        android:layout_marginTop="15dp"
+        android:src="@drawable/subject"
+        app:layout_constraintLeft_toRightOf="@id/sub2"
+        app:layout_constraintTop_toBottomOf="@id/txt_mypage_interesting_subject" />
 
     <View
         android:id="@+id/view3"
@@ -149,7 +152,8 @@
         android:text="내가 쓴 게시글"
         android:textColor="#000000"
         android:textSize="12sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:clickable="true"/>
     <View
         android:id="@+id/view4"
         app:layout_constraintTop_toBottomOf="@id/txt_mypage_written"
@@ -168,7 +172,8 @@
         android:text="좋아요 누른 게시글"
         android:textColor="#000000"
         android:textSize="12sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:clickable="true"/>
 
     <View
         android:id="@+id/view5"
@@ -187,7 +192,8 @@
         android:layout_marginLeft="24dp"
         android:text="커뮤니티 이용규칙"
         android:textColor="#000000"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:clickable="true"/>
 
     <View
         android:id="@+id/view6"
@@ -237,7 +243,8 @@
         android:layout_marginLeft="24dp"
         android:text="공지사항"
         android:textSize="14sp"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:clickable="true"/>
 
     <View
         android:id="@+id/view8"
@@ -257,7 +264,8 @@
         android:layout_marginLeft="24dp"
         android:text="개인정보 처리방침"
         android:textSize="12sp"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:clickable="true"/>
 
     <View
         android:id="@+id/view9"
@@ -277,6 +285,7 @@
         android:layout_marginLeft="24dp"
         android:text="로그아웃"
         android:textSize="12sp"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:clickable="true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

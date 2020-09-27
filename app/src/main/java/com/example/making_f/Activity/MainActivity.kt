@@ -1,8 +1,9 @@
-package com.example.making_f
+package com.example.making_f.Activity
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import com.example.making_f.R
 import com.example.making_f.navigation.HomeFragment
 import com.example.making_f.navigation.PostFragment
 import com.example.making_f.navigation.SearchFragment
@@ -43,4 +44,6 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         supportFragmentManager.beginTransaction().replace(R.id.main_content, detailViewFragment).commit()
         bottom_navigation.setOnNavigationItemSelectedListener(this)
     }
+
+
 }
