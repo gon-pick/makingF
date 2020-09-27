@@ -14,6 +14,7 @@ class SignUpActivity : AppCompatActivity() {
 
     var auth : FirebaseAuth? = null
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
@@ -25,9 +26,9 @@ class SignUpActivity : AppCompatActivity() {
                 Toast.makeText(this,"이메일 형식을 올바르게 입력해주세요.",Toast.LENGTH_SHORT).show()
             }else if((edit_signup_password.text.toString() != edit_signup_password_confirm.text.toString()) || edit_signup_password.text.toString().length<6){
                 Toast.makeText(this,"비밀번호는 6글자 이상 이고 비밀번호 확인과 동일해야 합니다.",Toast.LENGTH_SHORT).show()
-            }else{
+            }
+            else{
                 Signup()
-                finish()
             }
         }
 
@@ -45,10 +46,14 @@ class SignUpActivity : AppCompatActivity() {
                 if(task.isSuccessful){
                     //회원가입
                     moveMainPage(task.result?.user) //id 생성이 성공적으로 만들어졌을경우 MainPage로 이동
-                }else{
-                    //가입 안되면 에러메세지
-                    Toast.makeText(this,"회원가입 실패",Toast.LENGTH_SHORT).show()
+                    finish()
                 }
+                else{
+                    //가입 안되면 에러메세지
+                    Toast.makeText(this,"이메일이 중복이므로 수정하세요.",Toast.LENGTH_SHORT).show()
+                }
+
+
             }
     }
 
