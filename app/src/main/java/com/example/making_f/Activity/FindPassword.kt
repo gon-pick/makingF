@@ -31,7 +31,7 @@ class FindPassword : AppCompatActivity() {
         auth?.sendPasswordResetEmail(email)
             ?.addOnCompleteListener(this){
                 if(it.isSuccessful){
-                    Toast.makeText(this,"메일을 보냈습니다..",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this,"메일을 보냈습니다.",Toast.LENGTH_SHORT).show()
                 }
             }
     }

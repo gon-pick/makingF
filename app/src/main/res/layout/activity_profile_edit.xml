@@ -94,12 +94,12 @@
         android:textSize="12sp"/>
 
     <EditText
-        android:id="@+id/txt_profile_edit_my_nickname_ex"
+        android:id="@+id/edit_profile_edit_my_nickname_ex"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pview3"
-        android:text="닉네임 변경을 원하시면 입력하세요."
+        android:hint="닉네임 변경 원하면 3글자 이상 입력하세요."
         android:layout_marginRight="23dp"
         android:layout_marginTop="13dp"
         android:textColor="#707070"
@@ -173,6 +173,7 @@
         app:layout_constraintTop_toBottomOf="@id/txt_profile_edit_pwd" />
 
     <ImageButton
+        android:id="@+id/btn_profile_edit_modify"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="181dp"

@@ -21,7 +21,13 @@ class LoginActivity : AppCompatActivity() {
         loginPersistence()
 
         btn_login.setOnClickListener {//로그인 버튼 클릭
-            signinEmail()
+            if(edit_signin_email.text.toString().length==0 || edit_siginin_password.text.toString().length==0){
+                Log.e("log in email ==0","log in email ==0")
+                Toast.makeText(this,"아이디와 비밀번호를 입력하세요",Toast.LENGTH_SHORT).show()
+            }else{
+                signinEmail()
+            }
+
         }
 
         btn_signin_signup.setOnClickListener{//회원 가입 버튼
