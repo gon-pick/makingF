@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -13,24 +13,16 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="19dp"
-        android:text="전체게시판"
+        android:text="컴퓨터공학과 게시판"
         android:textSize="14sp"
         android:textStyle="bold"
         android:textColor="#000000"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/txt_board"
-        app:layout_constraintBottom_toBottomOf="@id/txt_board"
-        android:layout_marginLeft="17dp"
-        android:src="@drawable/btn_back"/>
-
-    <ImageView
-        android:layout_width="38dp"
-        android:layout_height="45dp"
-        android:layout_marginRight="17dp"
+        android:layout_width="31dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:src="@drawable/search"
         app:layout_constraintBottom_toBottomOf="@id/txt_board"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,8 +74,21 @@
         android:layout_height="wrap_content">
     </androidx.recyclerview.widget.RecyclerView>
 
-
-
+    <ImageButton
+        android:id="@+id/board_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="349dp"
+        android:layout_marginLeft="349dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="44dp"
+        android:background="#ffffff"
+        android:src="@drawable/write"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
