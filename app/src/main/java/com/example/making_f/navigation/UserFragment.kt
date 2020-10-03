@@ -13,6 +13,9 @@ import com.example.making_f.R
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_user.view.*
 
+    var auth : FirebaseAuth? = null
+    var uid : String? =null
+
 class UserFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -21,6 +24,7 @@ class UserFragment : Fragment() {
     ): View? {
         var view = LayoutInflater.from(activity).inflate(R.layout.fragment_user, container, false)
         val user = FirebaseAuth.getInstance().currentUser
+        auth = FirebaseAuth.getInstance()
 
         view.txt_mypage_name.setText(user?.displayName)
 
@@ -31,11 +35,11 @@ class UserFragment : Fragment() {
             getActivity()?.finish()
         }
 
-        view.txt_mypage_logout.setOnClickListener { view ->
-            FirebaseAuth.getInstance().signOut()
-            getActivity()?.finish()
+        view?.txt_mypage_logout?.setOnClickListener { view ->
+            activity?.finish()
             var intent = Intent(getActivity(), LoginActivity::class.java)
             startActivity(intent)
+            auth?.signOut()
         }
 
         return view
