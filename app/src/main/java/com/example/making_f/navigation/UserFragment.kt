@@ -11,9 +11,6 @@ import com.example.making_f.Activity.LoginActivity
 import com.example.making_f.Activity.ProfileEditActivity
 import com.example.making_f.R
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.UserProfileChangeRequest
-import kotlinx.android.synthetic.main.activity_profile_edit.*
-import kotlinx.android.synthetic.main.fragment_user.*
 import kotlinx.android.synthetic.main.fragment_user.view.*
 
 class UserFragment : Fragment() {

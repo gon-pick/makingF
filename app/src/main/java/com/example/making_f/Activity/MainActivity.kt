@@ -4,11 +4,9 @@ import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.example.making_f.R
-import com.example.making_f.navigation.HomeFragment
-import com.example.making_f.navigation.PostFragment
-import com.example.making_f.navigation.SearchFragment
-import com.example.making_f.navigation.UserFragment
+import com.example.making_f.navigation.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
@@ -32,6 +30,15 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             R.id.action_account ->{
                 var userFragment = UserFragment()
                 supportFragmentManager.beginTransaction().replace(R.id.main_content, userFragment).commit()
+                return true
+            }
+            R.id.action_myboard ->{
+                var boardFragment = myboardfragment()
+                var bundle = Bundle()
+                var uid = FirebaseAuth.getInstance().currentUser?.uid
+                bundle.putString("destinationUid",uid)
+                boardFragment.arguments=bundle
+                supportFragmentManager.beginTransaction().replace(R.id.main_content,boardFragment).commit()
                 return true
             }
         }

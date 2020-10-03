@@ -4,14 +4,13 @@
         android:id="@+id/action_home"
         android:icon="@drawable/ic_home"
         android:enabled="true"
-        android:title="홈"/>
+        android:title="Home"/>
     <item
         android:id="@+id/action_search"
         android:icon="@drawable/ic_search"
         android:enabled="true"
-        android:title="진로탐색"
+        android:title="Finding"
         />
-
     <item
         android:id="@+id/action_favorite_alarm"
         android:icon="@drawable/ic_favorate_border"
@@ -22,4 +21,9 @@
         android:icon="@drawable/ic_account"
         android:enabled="true"
         android:title="account"/>
+    <item
+        android:id="@+id/action_myboard"
+        android:icon="@drawable/ic_smile"
+        android:enabled="true"
+        android:title="myboard"/>
 </menu>
