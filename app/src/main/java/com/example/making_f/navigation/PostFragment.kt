@@ -80,6 +80,9 @@ class PostFragment : Fragment() {
             //UserId
             viewholder.detailviewitem_profile_textview.text = contentDTOs!![p1].userId
 
+            //Title
+            viewholder.detailviewitem_profile_title.text = contentDTOs!![p1].title
+
             //Image
             Glide.with(p0.itemView.context).load(contentDTOs!![p1].imageUrl).into(viewholder.detailviewitem_imageView_content)
 
