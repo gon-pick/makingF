@@ -89,6 +89,12 @@
                 android:layout_height="136dp"
                 android:layout_marginLeft="20dp"
                 android:background="@drawable/add_2"/>
+
+            <ImageView
+                android:layout_width="210dp"
+                android:layout_height="136dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/future"/>
         </LinearLayout>
     </HorizontalScrollView>
 

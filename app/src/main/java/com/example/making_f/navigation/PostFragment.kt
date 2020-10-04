@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.making_f.Activity.AddPhotoActivity
+import com.example.making_f.Activity.CommentActivity
 import com.example.making_f.R
 import com.example.making_f.navigation.model.ContentDTO
 import com.google.firebase.auth.FirebaseAuth

@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.making_f.Activity.LoginActivity
+import com.example.making_f.Activity.CommentActivity
 import com.example.making_f.R
 import com.example.making_f.navigation.model.ContentDTO
 import com.google.firebase.auth.FirebaseAuth
@@ -20,7 +20,6 @@ import com.google.firebase.firestore.FirebaseFirestoreException
 import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.QuerySnapshot
 import kotlinx.android.synthetic.main.fragment_home.view.*
-import kotlinx.android.synthetic.main.fragment_post.view.*
 import kotlinx.android.synthetic.main.item_detail.view.*
 
 class HomeFragment : Fragment() {
@@ -40,8 +39,8 @@ class HomeFragment : Fragment() {
         view.home_recyclerview.layoutManager = LinearLayoutManager(activity)
 
         view.manual.setOnClickListener{ view ->
-            Log.d("manual", "Selected")
-            Toast.makeText(getActivity()!!, "네비게이션 바 클릭", Toast.LENGTH_SHORT).show()
+            Log.d("from Home", "to future job")
+            startActivity(Intent(getActivity()!!, TestActivity::class.java))
         }
 
         return view

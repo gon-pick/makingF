@@ -90,4 +90,9 @@ class ProfileEditActivity : AppCompatActivity() {
             Toast.makeText(this,"닉네임은 3글자 이상이여야 변경됩니다.",Toast.LENGTH_SHORT).show()
         }
     }
+
+    override fun onBackPressed() {
+        finish()
+        super.onBackPressed()
+    }
 }
