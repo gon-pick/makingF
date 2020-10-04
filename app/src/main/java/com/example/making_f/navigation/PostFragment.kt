@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -19,6 +20,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreException
 import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.QuerySnapshot
+import kotlinx.android.synthetic.main.fragment_post.*
 import kotlinx.android.synthetic.main.fragment_post.view.*
 import kotlinx.android.synthetic.main.item_detail.view.*
 
@@ -31,6 +33,32 @@ class PostFragment : Fragment() {
         firestore = FirebaseFirestore.getInstance()
         uid = FirebaseAuth.getInstance().currentUser?.uid
 
+        // 검색 옵션 변수
+        var searchOption = "title"
+
+        // 스피너 옵션에 따른 동작
+        view.spinner.onItemSelectedListener = object: AdapterView.OnItemSelectedListener {
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+            }
+
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                when (spinner.getItemAtPosition(position)) {
+                    "제목" -> {
+                        searchOption = "title"
+                    }
+                    "닉네임" -> {
+                        searchOption = "userId"
+                    }
+                }
+            }
+        }
+
+
         view.detailviewfragment_recyclerview.adapter = DetailVeiwRecyclerViewAdapter()
         view.detailviewfragment_recyclerview.layoutManager = LinearLayoutManager(activity)
 
@@ -40,6 +68,11 @@ class PostFragment : Fragment() {
             startActivity(intent)
             getActivity()?.finish()
         }
+
+        view.searchBtn.setOnClickListener {
+            (view.detailviewfragment_recyclerview.adapter as DetailVeiwRecyclerViewAdapter).search(searchWord.text.toString(),searchOption)
+        }
+
         return view
     }
     inner class DetailVeiwRecyclerViewAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -130,6 +163,24 @@ class PostFragment : Fragment() {
             }
         }
 
-    }
+        // 파이어스토어에서 데이터를 불러와서 검색어가 있는지 판단
+        fun search(serachWord : String, option : String) {
+            firestore?.collection("images")?.addSnapshotListener { querySnapshot, firebaseFirestoreException ->
+                // ArrayList 비워줌
+                contentDTOs.clear()
 
+                //Sometimes, This code return null of querySnapshot when it sign out
+                if(querySnapshot == null) return@addSnapshotListener
+
+                for(snapshot in querySnapshot!!.documents) {
+                    if(snapshot.getString(option) == null) return@addSnapshotListener
+                    else if (snapshot.getString(option)!!.contains(serachWord)) {
+                        var item = snapshot.toObject(ContentDTO::class.java)
+                        contentDTOs.add(item!!)
+                    }
+                }
+                notifyDataSetChanged()
+            }
+        }
+    }
 }
