@@ -16,6 +16,7 @@ import com.example.making_f.navigation.model.ContentDTO
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.FirebaseFirestoreException
+import com.google.firebase.firestore.Query
 import com.google.firebase.firestore.QuerySnapshot
 import kotlinx.android.synthetic.main.fragment_post.view.*
 import kotlinx.android.synthetic.main.item_detail.view.*
@@ -45,7 +46,7 @@ class PostFragment : Fragment() {
         var contentUidList : ArrayList<String> = arrayListOf()
 
         init {
-            firestore?.collection("images")?.orderBy("timestamp")?.addSnapshotListener { querySnapshot: QuerySnapshot?, firebaseFirestoreException: FirebaseFirestoreException? ->
+            firestore?.collection("images")?.orderBy("timestamp", Query.Direction.DESCENDING)?.addSnapshotListener { querySnapshot: QuerySnapshot?, firebaseFirestoreException: FirebaseFirestoreException? ->
                 contentDTOs.clear()
                 contentUidList.clear()
                 //Sometimes, This code return null of querySnapshot when it sign out
@@ -99,6 +100,11 @@ class PostFragment : Fragment() {
             }else{
                 //This is unlike status
                 viewholder.detailviewitem_favorite_imageview.setImageResource(R.drawable.heart)
+            }
+            viewholder.detailviewitem_comment_imageview.setOnClickListener {v->
+                var intent = Intent(v.context, CommentActivity::class.java)
+                intent.putExtra("contentUid",contentUidList[p1])
+                startActivity(intent)
             }
         }
         fun favoriteEvent(position: Int){
