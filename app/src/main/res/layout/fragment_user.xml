@@ -80,38 +80,17 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
-        android:id="@+id/txt_mypage_written_good"
+        android:id="@+id/txt_mypage_community_rule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="13dp"
         android:clickable="true"
-        android:text="좋아요 누른 게시글"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view3" />
-
-    <View
-        android:id="@+id/view5"
-        app:layout_constraintTop_toBottomOf="@id/txt_mypage_written_good"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="13dp"
-        android:background="#e3e3e3"/>
-    <TextView
-        android:id="@+id/txt_mypage_community_rule"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view5"
-        android:layout_marginTop="13dp"
-        android:layout_marginLeft="24dp"
         android:text="커뮤니티 이용규칙"
         android:textColor="#000000"
         android:textSize="12sp"
-        android:clickable="true"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
 
     <View
         android:id="@+id/view6"

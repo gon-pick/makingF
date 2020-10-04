@@ -45,13 +45,49 @@
             app:layout_constraintTop_toBottomOf="@+id/txt_board" />
 
         <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/view11"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/option" />
+
+            <EditText
+                android:id="@+id/searchWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="검색어를 입력해주세요."
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/searchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="검색" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view12"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#e3e3e3"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <LinearLayout
             android:id="@+id/boardlinear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view11"
+            app:layout_constraintTop_toBottomOf="@+id/view12"
             android:layout_marginBottom="50dp">
 
             <androidx.recyclerview.widget.RecyclerView
