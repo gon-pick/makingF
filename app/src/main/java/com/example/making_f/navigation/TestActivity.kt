@@ -6,12 +6,25 @@ import android.widget.SeekBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.making_f.R
+import com.google.firebase.ml.common.modeldownload.FirebaseModelDownloadConditions
+import com.google.firebase.ml.common.modeldownload.FirebaseModelManager
+import com.google.firebase.ml.custom.FirebaseCustomLocalModel
+import com.google.firebase.ml.custom.FirebaseCustomRemoteModel
+import com.google.firebase.ml.custom.FirebaseModelInterpreter
+import com.google.firebase.ml.custom.FirebaseModelInterpreterOptions
 import kotlinx.android.synthetic.main.activity_test.*
 
 class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_test)
+
+        val localModel = FirebaseCustomLocalModel.Builder()
+            .setAssetFilePath("model.tflite")
+            .build()
+
+        val options = FirebaseModelInterpreterOptions.Builder(localModel).build()
+        val interpreter = FirebaseModelInterpreter.getInstance(options)
 
         var sek1: Int
         var sek2 = 0

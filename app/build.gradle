@@ -24,6 +24,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    aaptOptions {
+        noCompress "tflite"
+    }
 }
 
 apply plugin: 'com.android.application'
@@ -51,4 +55,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:21.6.0'
     implementation 'androidx.multidex:multidex:2.0.1'
     implementation 'com.google.firebase:firebase-storage:19.2.0'
+    implementation 'org.tensorflow:tensorflow-lite:+'
+    implementation 'com.google.firebase:firebase-ml-model-interpreter:22.0.3'
 }
+
