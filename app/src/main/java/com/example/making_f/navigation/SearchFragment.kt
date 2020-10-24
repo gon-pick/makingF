@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.example.making_f.Activity.TestActivity
 import com.example.making_f.R
 import kotlinx.android.synthetic.main.fragment_search.view.*
 

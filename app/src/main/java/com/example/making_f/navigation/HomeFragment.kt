@@ -6,12 +6,12 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.making_f.Activity.CommentActivity
+import com.example.making_f.Activity.TestActivity
 import com.example.making_f.R
 import com.example.making_f.navigation.model.ContentDTO
 import com.google.firebase.auth.FirebaseAuth

@@ -25,7 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".navigation.TestActivity" />
+        <activity android:name=".Activity.TestActivity" />
     </application>
 
 </manifest>

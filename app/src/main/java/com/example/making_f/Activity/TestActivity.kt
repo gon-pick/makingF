@@ -1,16 +1,14 @@
-package com.example.making_f.navigation
+package com.example.making_f.Activity
 
 import android.app.AlertDialog
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.making_f.R
 import com.google.firebase.ml.common.modeldownload.FirebaseModelDownloadConditions
 import com.google.firebase.ml.common.modeldownload.FirebaseModelManager
 import com.google.firebase.ml.custom.*
 import kotlinx.android.synthetic.main.activity_test.*
-import java.util.*
 
 class TestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

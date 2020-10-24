@@ -9,14 +9,8 @@
     <ImageView
         android:layout_width="300dp"
         android:layout_height="300dp"
-<<<<<<< HEAD
         android:layout_marginBottom="50dp"
-        android:background="@drawable/systemsoftware"
-=======
-        android:background="@drawable/systemsoftware"
-        android:layout_marginBottom="50dp"
->>>>>>> 1c04f7a028b53238d03983ed2315ca310926b0e2
-        android:layout_gravity="center"/>
+        android:background="@drawable/systemsoftware"/>
 
     <TextView
         android:layout_width="wrap_content"
