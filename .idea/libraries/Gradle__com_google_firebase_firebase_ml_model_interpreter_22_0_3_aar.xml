@@ -1,6 +1,7 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.firebase:firebase-ml-model-interpreter:22.0.3@aar">
     <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6c99ab09d92125a3465a0120c34acf0/jetified-firebase-ml-model-interpreter-22.0.3/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6c99ab09d92125a3465a0120c34acf0/jetified-firebase-ml-model-interpreter-22.0.3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c6c99ab09d92125a3465a0120c34acf0/jetified-firebase-ml-model-interpreter-22.0.3/res" />
     </CLASSES>
