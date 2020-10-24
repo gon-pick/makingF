@@ -1,9 +1,8 @@
 package com.example.making_f.navigation
 
+import android.app.AlertDialog
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.util.Log
-import android.widget.SeekBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.making_f.R
@@ -39,8 +38,7 @@ class TestActivity : AppCompatActivity() {
         var sek5 = 0
         var sek6 = 0
         var sek7 = 0
-        var input = arrayOf(0,0,0,0,0,0,0)
-
+        var bestMatchIndex = 0
         btn_popup_result.setOnClickListener { view ->
             sek1 = seek1.progress
             sek2 = seek2.progress
@@ -49,6 +47,12 @@ class TestActivity : AppCompatActivity() {
             sek5 = seek5.progress
             sek6 = seek6.progress
             sek7 = seek7.progress
+            val builder = AlertDialog.Builder(this)
+            val dialogView1 = layoutInflater.inflate(R.layout.sub_popup1, null)
+            val dialogView2 = layoutInflater.inflate(R.layout.sub_popup2, null)
+            val dialogView3 = layoutInflater.inflate(R.layout.sub_popup3, null)
+            val dialogView4 = layoutInflater.inflate(R.layout.sub_popup4, null)
+            val dialogView5 = layoutInflater.inflate(R.layout.sub_popup5, null)
 
             val input = Array(1){FloatArray(7)}
 
@@ -75,22 +79,49 @@ class TestActivity : AppCompatActivity() {
                     var output = result.getOutput<Array<FloatArray>>(0)
                     val probabilities = output[0]
                     var bestMatch = 0f
-                    var bestMatchIndex = 0
+
                     for (i in probabilities.indices){
                         if(probabilities[i]>bestMatch){
                             bestMatch = probabilities[i]
                             bestMatchIndex = i
                         }
                     }
+                    if(bestMatchIndex == 0) {
+                        //시스템 엔지니어
+                        builder.setView(dialogView1)
+                            .show()
+                    }
+                    else if(bestMatchIndex == 1) {
+                        //시스템 소프트웨어 개발자
+                        builder.setView(dialogView2)
+                            .show()
+                    }
+                    else if(bestMatchIndex == 2) {
+                        //네트워크 엔지니어
+                        builder.setView(dialogView3)
+                            .show()
+                    }
+                    else if(bestMatchIndex == 3) {
+                        //데이터베이스 관리자
+                        builder.setView(dialogView4)
+                            .show()
+                    }
+                    else if(bestMatchIndex ==4) {
+                        //응용 소프트웨어 개발자자
+                        builder.setView(dialogView5)
+                            .show()
+                    }
 
-                    var tmp = Arrays.toString(output[0])
-                    Log.d("HUSKY2", "${output}")
                     //Toast.makeText(this, "${tmp}", Toast.LENGTH_SHORT).show()
-                    Toast.makeText(this, "${tmp}, ${bestMatchIndex}", Toast.LENGTH_LONG).show()
+                    //Toast.makeText(this, "${tmp}, ${bestMatchIndex}", Toast.LENGTH_LONG).show()
+
                 }
                 ?.addOnFailureListener {e ->
                     Log.d("HUSKY2", "GGWP :(${e.toString()}")
                 }
+
         }
     }
+
+
 }
