@@ -5,24 +5,19 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
-  </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="106b1c14-1404-4b32-88a1-dcd4b611ed8e" name="Default Changelist" comment="" />
-=======
-    <list default="true" id="87bf4b5b-cf5d-4295-b174-464fe6b7814f" name="Default Changelist" comment="">
+    <list default="true" id="391d81d3-6902-49ea-aaef-d7b2e5f0eb8c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/making_f/navigation/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/making_f/navigation/HomeFragment.kt" afterDir="false" />
     </list>
->>>>>>> 099e661d5685f75f65edd6e07c9214d008d45e2e
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_28" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="LMV500N8233eb3f" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -35,52 +30,19 @@
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="resourceFile" />
-        <option value="Kotlin File" />
-        <option value="Kotlin Class" />
-        <option value="layoutResourceFile" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
-  <component name="ProjectId" id="1gfbft5p7aFN4tTFCdj8K1r7hM7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1kv17LAu1YNU6JFYQnGIuAu5gMt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="27516b7c12217ece" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-08-27T10:37:47.102Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Dependencies" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\75dud\AndroidStudioProjects\Making_F\app\src\main\res\drawable" />
-    </key>
+    <property name="last_opened_file_path" value="E:/makingf/main-makingf" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -147,106 +109,22 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9f6ddfde-970b-45d7-af8f-fb68400e1ff7" name="Default Changelist" comment="" />
-      <created>1598508700978</created>
+      <changelist id="391d81d3-6902-49ea-aaef-d7b2e5f0eb8c" name="Default Changelist" comment="" />
+      <created>1606566083572</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1598508700978</updated>
+      <updated>1606566083572</updated>
     </task>
-    <task id="LOCAL-00001" summary="initializing">
-      <created>1599124017100</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1599124017100</updated>
-    </task>
-    <task id="LOCAL-00002" summary="initializing">
-      <created>1600504116272</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1600504116272</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="initializing" />
-    <option name="LAST_COMMIT_MESSAGE" value="initializing" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="70" key="#Notifications" timestamp="1599124094992">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="1700" y="458" key="FileChooserDialogImpl" timestamp="1606566395470">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="361" y="70" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1599124094992" />
-    <state x="572" y="144" key="#PSD" timestamp="1599054563158">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="1700" y="458" key="FileChooserDialogImpl/0.0.2560.1400/-1920.134.1920.1040@0.0.2560.1400" timestamp="1606566395470" />
+    <state x="972" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1606566127495">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="572" y="144" key="#PSD/0.0.1536.824@0.0.1536.824" timestamp="1599054563158" />
-    <state x="491" y="56" key="#app" timestamp="1600503064030">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="491" y="56" key="#app/0.0.1536.824@0.0.1536.824" timestamp="1600503064030" />
-    <state x="50" y="185" key="AndroidCreateResourceFileDialog" timestamp="1598882015037">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="50" y="185" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1598882015037" />
-    <state x="386" y="7" key="CommitChangelistDialog2" timestamp="1600504114882">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="386" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600504114882" />
-    <state x="933" y="167" key="FileChooserDialogImpl" timestamp="1599123730492">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="933" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599123730492" />
-    <state width="1476" height="208" key="GridCell.Tab.0.bottom" timestamp="1600504199343">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1476" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600504199343" />
-    <state width="1476" height="208" key="GridCell.Tab.0.center" timestamp="1600504199342">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1476" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600504199342" />
-    <state width="1476" height="208" key="GridCell.Tab.0.left" timestamp="1600504199342">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1476" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600504199342" />
-    <state width="1476" height="208" key="GridCell.Tab.0.right" timestamp="1600504199342">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1476" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600504199342" />
-    <state x="147" y="65" key="MergeDialog" timestamp="1600502995415">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="147" y="65" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1600502995415" />
-    <state x="480" y="128" key="MultipleFileMergeDialog" timestamp="1600502995452">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="480" y="128" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1600502995452" />
-    <state x="555" y="54" key="SettingsEditor" timestamp="1598882392173">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="555" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1598882392173" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599124107024">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599124107024" />
-    <state x="842" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1600504269967">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="842" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600504269967" />
-    <state x="535" y="124" key="git4idea.branch.GitSmartOperationDialog" timestamp="1600502818942">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="535" y="124" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.824@0.0.1536.824" timestamp="1600502818942" />
-    <state x="664" y="152" key="psd.add.library.dependency.panel.dimension" timestamp="1599054538513">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="664" y="152" key="psd.add.library.dependency.panel.dimension/0.0.1536.824@0.0.1536.824" timestamp="1599054538513" />
-    <state x="815" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598796809066">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="815" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1598796809066" />
+    <state x="972" y="524" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/-1920.134.1920.1040@0.0.2560.1400" timestamp="1606566127495" />
   </component>
 </project>
