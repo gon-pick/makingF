@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <color name="logo_background">#DCD9D9</color>
+=======
+    <color name="logo_background">#DCD7D9</color>
+>>>>>>> 94135f86331302f1ce6c6934ee33d03a710f661e
 </resources>
