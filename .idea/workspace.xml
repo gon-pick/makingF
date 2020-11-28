@@ -7,9 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="391d81d3-6902-49ea-aaef-d7b2e5f0eb8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,6 +115,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1028" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606567536915">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1028" y="502" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.134.1920.1040@0.0.2560.1400" timestamp="1606567536915" />
     <state x="1700" y="458" key="FileChooserDialogImpl" timestamp="1606566395470">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
