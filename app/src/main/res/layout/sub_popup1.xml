@@ -15,7 +15,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="진로 추천 결과 입니다. "
+        android:text="직업 추천결과 1순위는"
         android:layout_gravity="center"/>
 
     <TextView
