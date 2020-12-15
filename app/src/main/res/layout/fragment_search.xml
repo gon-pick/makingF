@@ -33,22 +33,23 @@
         android:background="@drawable/ic_inputback"
         android:orientation="horizontal"
         android:layout_gravity="center_horizontal">
-        
+
         <ImageButton
-            android:layout_width="15dp"
-            android:layout_height="15dp"
+            android:id="@+id/toUniversity"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="16dp"
-            android:background="@drawable/search"/>
+            android:background="@drawable/search" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="52dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="90dp"
-            android:text="컴퓨터공학과"
+            android:layout_marginLeft="120dp"
+            android:text="Click"
             android:textColor="#000000"
-            android:textSize="20sp" />
+            android:textSize="17sp" />
 
     </LinearLayout>
     <LinearLayout
@@ -65,7 +66,7 @@
             android:textSize="14sp"
             android:textColor="#6c7bf4"
             android:lineSpacingExtra="5sp"
-            android:text="학과 개요"
+            android:text="컴퓨터 공학과 개요"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="30dp"/>
         
