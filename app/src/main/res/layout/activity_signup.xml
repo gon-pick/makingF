@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="8sp"
+        android:text="회원가입"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/text_signup_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="2sp"
+        android:text="닉네임"
+        android:layout_below="@id/text_signup"
+        android:layout_marginTop="38dp"
+        android:layout_marginLeft="23dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_signup_name"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/text_signup_name"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="23dp"
+        android:hint="닉네임을 입력하세요."
+        android:background="@drawable/round_edittext"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_signup_email"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="2sp"
+        android:text="이메일"
+        android:layout_below="@id/edit_signup_name"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="23dp"
+        />
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:id="@+id/edit_signup_email"
+        android:layout_below="@id/text_signup_email"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="23dp"
+        android:background="@drawable/round_edittext"
+        android:hint="abc@email.com"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_signup_password"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="2sp"
+        android:text="비밀번호"
+        android:layout_below="@id/edit_signup_email"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="23dp"
+        />
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:id="@+id/edit_signup_password"
+        android:layout_below="@id/text_signup_password"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="23dp"
+        android:background="@drawable/round_edittext"
+        android:hint="********"
+        android:password="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_signup_password_confirm"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="2sp"
+        android:text="비밀번호 확인"
+        android:layout_below="@id/edit_signup_password"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="23dp"
+        />
+
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:id="@+id/edit_signup_password_confirm"
+        android:layout_below="@id/text_signup_password_confirm"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="23dp"
+        android:background="@drawable/round_edittext"
+        android:hint="********"
+        android:password="true"
+        />
+    
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:id="@+id/btn_signup"
+        android:layout_below="@id/edit_signup_password_confirm"
+        android:layout_marginTop="43dp"
+        android:layout_marginLeft="23dp"
+        android:background="@drawable/btn_signup_complete"
+        />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:id="@+id/btn_find_account"
+        android:text="이미 계정이 있으신가요?"
+        android:background="#ffffff"
+        android:textSize="12sp"
+        android:textColor="#4756f6"
+        android:lineSpacingExtra="10sp"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/btn_signup"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

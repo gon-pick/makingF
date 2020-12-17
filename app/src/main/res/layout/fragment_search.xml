@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="진로탐색"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:layout_marginTop="19dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"
+        android:layout_marginTop="20.5dp"
+        android:orientation="horizontal"/>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="14.5dp"
+        android:background="@drawable/ic_inputback"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/toUniversity"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/search" />
+
+        <TextView
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="120dp"
+            android:text="Click"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="300dp"
+        android:background="@drawable/ic_base"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#6c7bf4"
+            android:lineSpacingExtra="5sp"
+            android:text="컴퓨터 공학과 개요"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#e0e0e0"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="8sp"
+            android:text="컴퓨터공학은 공업을 위주로 하던 산업사회에서 정보화 사회로
+의 이행이 가속됨에 따라 정보산업을 선도하는 핵심적인 학문
+분야로 자리 잡고 있다. 컴퓨터공학과는 인류사회 복지에 선도
+적으로 공헌할 수 있는 창의적이고 책임감 있으며 도전 의식과
+적응 능력을 겸비하고 IT 분야의 전문 이론과 현장 실무 경험을
+두루 갖춘 유능한 공학인의 양성에 교육목표를 두고 있다.
+"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="45dp"
+        android:background="@drawable/ic_base2"
+        android:layout_marginTop="22dp"
+        android:layout_gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#6c7bf4"
+            android:lineSpacingExtra="5sp"
+            android:text="학과 교과목"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#707070"
+        android:lineSpacingExtra="4sp"
+        android:text="진로 추천을 위한 관심있는 과목을 5개 설정해주세요!"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="30dp"/>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    소프트웨어 공학"
+            android:id="@+id/check1"
+            android:button="@null"
+            android:drawableLeft="@drawable/check_color"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingExtra="5sp"
+            android:textSize="12sp"
+            android:text="소프트웨어를 공학적으로 생산, 문서화, 수정 및 유지 보수하고자 하는 추세에 관련된 동향 및 이론 배경을 배웁니다"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0"
+            android:layout_marginTop="20.5dp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    운영체제"
+            android:button="@null"
+            android:id="@+id/check2"
+            android:drawableLeft="@drawable/check_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingExtra="5sp"
+            android:textSize="12sp"
+            android:text="컴퓨터를 실제 사용하기 위해서 필수적인 운영체제에 대해서 구체적인 구조와 구성, 그리고 발생하는 문제를 해결하기 위한 해결법을 배웁니다."
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0"
+            android:layout_marginTop="20.5dp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    자료구조와 실험"
+            android:button="@null"
+            android:id="@+id/check3"
+            android:drawableLeft="@drawable/check_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingExtra="5sp"
+            android:textSize="12sp"
+            android:text="주어진 문제를 효과적으로 해결하는 데 자주 사용되는 여러 가지 자료 구조를 살펴보고 이를 실제적으로 구현하는 방법과 기본적인 알고리즘에 대해서 배웁니다"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0"
+            android:layout_marginTop="20.5dp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    정보보호론"
+            android:button="@null"
+            android:id="@+id/check4"
+            android:drawableLeft="@drawable/check_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingExtra="5sp"
+            android:textSize="12sp"
+            android:text="정보기술 분야의 세부 전문 분야를 개괄적으로 이해할 수 있도록 컴퓨터 시스템, 컴퓨터 네트워크, 정보처리 기술, 멀티미디어와 응용 등의 기초 개념을 배웁니다"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0"
+            android:layout_marginTop="20.5dp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    컴퓨터 시스템 구조"
+            android:button="@null"
+            android:id="@+id/check5"
+            android:drawableLeft="@drawable/check_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingExtra="5sp"
+            android:textSize="12sp"
+            android:text="디지털 컴퓨터의 하드웨어적인 구성과 그 동작 원리를 이해할 수 있도록 컴퓨터 구조의 기초 개념을 배웁니다."
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0"
+            android:layout_marginTop="20.5dp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    IoT 시스템"
+            android:button="@null"
+            android:id="@+id/check6"
+            android:drawableLeft="@drawable/check_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingExtra="5sp"
+            android:textSize="12sp"
+            android:text="시스템에 많이 사용되는 마이크로프로세서의 구조를 살펴보고 임베디드용 운영체제를 배웁니다."
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0"
+            android:layout_marginTop="20.5dp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    데이터베이스"
+            android:button="@null"
+            android:id="@+id/check7"
+            android:drawableLeft="@drawable/check_color"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:lineSpacingExtra="5sp"
+            android:textSize="12sp"
+            android:text="실세계의 다양한 정보원들을 조직화하여 통합 저장하는 데이터베이스와 이를 중앙 관리하는 데이터베이스 관리 시스템 및 관련 이론과 기술을 배웁니다."
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e0e0e0"
+            android:layout_marginTop="20.5dp"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="210dp"
+        android:layout_height="41dp"
+        android:background="@drawable/btn_rank"
+        android:id="@+id/btn_jobrank"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
+</ScrollView>
