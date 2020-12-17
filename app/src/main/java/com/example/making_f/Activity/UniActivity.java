@@ -3,7 +3,10 @@ package com.example.making_f.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.making_f.R;
 
@@ -13,9 +16,14 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class UniActivity extends AppCompatActivity {
+
+    private ArrayList<UniSample> UniSamples = new ArrayList<>();
+    private UniAdapter uniAdapter;
+    private RecyclerView recyclerView;
+    private LinearLayoutManager linearLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +31,15 @@ public class UniActivity extends AppCompatActivity {
         setContentView(R.layout.activity_university);
 
         readWeatherData();
+
+        recyclerView = (RecyclerView)findViewById(R.id.universityActivity_recyclerview);
+        linearLayoutManager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(linearLayoutManager);
+        uniAdapter = new UniAdapter(UniSamples);
+        recyclerView.setAdapter(uniAdapter);
+
     }
 
-    private List<WeatherSample> weatherSamples= new ArrayList<>();
     private void readWeatherData() {
         InputStream is = getResources().openRawResource(R.raw.data);
         BufferedReader reader = new BufferedReader(
@@ -41,13 +55,13 @@ public class UniActivity extends AppCompatActivity {
 
 
                 //Read the data
-                WeatherSample sample = new WeatherSample();
+                UniSample sample = new UniSample();
                 sample.setUniSeparators(tokens[0]);
                 sample.setLocation(tokens[1]);
                 sample.setUniversity(tokens[2]);
                 sample.setDepartment(tokens[3]);
 
-                weatherSamples.add(sample);
+                UniSamples.add(sample);
                 Log.d("UniActivity","UniDepart " + sample.getDepartment());
             }
 
