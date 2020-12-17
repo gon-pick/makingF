@@ -9,13 +9,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.making_f.Activity.ProfileEditActivity
 import com.example.making_f.Activity.TestActivity
-import com.example.making_f.Activity.UniversityActivity
+import com.example.making_f.Activity.UniActivity
 import com.example.making_f.R
-import kotlinx.android.synthetic.main.fragment_search.*
 import kotlinx.android.synthetic.main.fragment_search.view.*
-import kotlinx.android.synthetic.main.fragment_user.view.*
 
 class SearchFragment : Fragment() {
 
@@ -35,7 +32,7 @@ class SearchFragment : Fragment() {
 
         view.toUniversity.setOnClickListener { view ->
             Log.d("btn_jobrank", "Selected")
-            startActivity(Intent(getActivity()!!, UniversityActivity::class.java))
+            startActivity(Intent(getActivity()!!, UniActivity::class.java))
         }
 
         return view
